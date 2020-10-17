@@ -36,21 +36,46 @@ export default {
         {
           id: '0',
           content: 'Slide1',
-          imgUrl: '<%= BASE_URL %>Here_channel.png',
+          imgUrl: 'http://localhost:8080/img/Most_popular_name.248a3289.png',
+          styles: {
+            width: 100,
+            height: 200,
+            translateX: 100,
+            translateY: 100,
+          },
         },
         {
           id: '1',
           content: 'Slide2',
-          imgUrl: '../public/Most_popular_name.png',
+          imgUrl: 'http://localhost:8080/img/Most_talkative.cb7a55d1.png',
+          styles: {
+            width: 250,
+            height: 100,
+            translateX: 100,
+            translateY: 100,
+          },
         },
         {
           id: '2',
           content: 'Slide3',
-          imgUrl: '../assets/Most_popular_name.png',
+          imgUrl: 'http://localhost:8080/img/Weather.2fb05b2e.png',
+          styles: {
+            width: 200,
+            height: 200,
+            translateX: 100,
+            translateY: 100,
+          },
         },
         {
           id: '3',
           content: 'Slide4',
+          imgUrl: 'http://localhost:8080/img/Vacation.6a808b57.png',
+          styles: {
+            width: 200,
+            height: 200,
+            translateX: 100,
+            translateY: 100,
+          },
         },
       ],
     };

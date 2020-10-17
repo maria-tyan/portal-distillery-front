@@ -9,14 +9,13 @@
   padding: 50px 20px;
   color: white;
   box-shadow: 0 20px 35px 0 rgba(black, 0.2);
-  background-image: url(../assets/Most_popular_name.png);
+  background-image: url(../assets/Here_channel.png);
+  background-image: url(../assets/Vacation.png);
+  background-image: url(../assets/Weather.png);
+  background-image: url(../assets/Most_talkative.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-
-  &:nth-child(2) {
-    background-image: url(../assets/Here_channel.png);
-  }
 }
 
 .slide-interface {
@@ -47,6 +46,26 @@
 
     &:hover {
       color: @COLOR-GOLD;
+    }
+  }
+}
+
+.hover-block {
+  opacity: 0;
+  transition: all .5s;
+  width: 200px;
+  height: 100px;
+  display: block;
+  color: @COLOR-HINTS;
+  padding: 50px 20px;
+  background-color: white;
+  box-shadow: 0 20px 35px 0 rgba(black, 0.2);
+}
+
+.additional-data {
+  &:hover{
+    .hover-block {
+      opacity: 1;
     }
   }
 }
