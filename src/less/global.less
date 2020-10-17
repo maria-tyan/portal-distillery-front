@@ -1,0 +1,44 @@
+
+@import "./variables.less";
+@import "./transitions.less";
+
+html, body {
+  color: @COLOR-BODY-TEXT;
+  background-color: white;
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+  
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.section {
+  position: relative;
+  display: flex;
+  flex: 1 0 auto;
+  flex-wrap: wrap;
+  margin: 100px auto 0;
+}

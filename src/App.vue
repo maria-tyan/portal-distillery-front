@@ -1,32 +1,34 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <header class="header">
+      <div class="header__container">
+        <img class="header__title" src="./assets/distillery-logo.png" />
+      </div>
+      <div id="nav" class="header__nav nav">
+        <router-link to="/" class="nav__item">Home</router-link>
+        <router-link to="/settings" class="nav__item">Settings</router-link>
+      </div>
+    </header>
+
+    <section class="section">
+      <router-view/>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__copyright">
+        <p class="footer__copyright-item">
+          AwesomeTEAM &copy;
+          {{ new Date().getFullYear() }}
+        </p>
+      </div>
+    </footer>
   </div>
 </template>
 
 <style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+  @import "./less/global.less";
+  @import "./less/header.less";
+  @import "./less/card.less";
+  @import "./less/button.less";
+  @import "./less/footer.less";
 </style>
