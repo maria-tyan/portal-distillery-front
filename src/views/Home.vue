@@ -36,13 +36,13 @@ export default {
         {
           id: '0',
           contentImg: {
-            url: '/img/here_meme_2.97cb3440.jpeg',
+            url: 'https://maria-tyan.github.io/portal-distillery-front/img/here_meme_2.97cb3440.jpeg',
             styles: {
               width: 600,
               height: 600,
             },
           },
-          imgUrl: '/img/Here_channel.44e73815.png',
+          imgUrl: 'https://maria-tyan.github.io/portal-distillery-front/img/Here_channel.44e73815.png',
           styles: {
             width: 600,
             height: 600,
@@ -55,7 +55,7 @@ export default {
           content: {
             text: '+25 новых сообщений',
           },
-          imgUrl: '/img/Most_talkative.abab0eb5.png',
+          imgUrl: 'https://maria-tyan.github.io/portal-distillery-front/img/Most_talkative.abab0eb5.png',
           styles: {
             width: 250,
             height: 85,
@@ -66,13 +66,13 @@ export default {
         {
           id: '2',
           contentImg: {
-            url: '/img/351-3519746_toasty-toasty-mortal-kombat-meme.9a78b3a4.png',
+            url: 'https://maria-tyan.github.io/portal-distillery-front/img/351-3519746_toasty-toasty-mortal-kombat-meme.9a78b3a4.png',
             styles: {
               width: 600,
               height: 600,
             },
           },
-          imgUrl: '/img/Weather.6c9c9c76.png',
+          imgUrl: 'https://maria-tyan.github.io/portal-distillery-front/img/Weather.6c9c9c76.png',
           styles: {
             width: 600,
             height: 600,
@@ -82,7 +82,7 @@ export default {
         },
         {
           id: '3',
-          imgUrl: '/img/Vacation.58135ecc.png',
+          imgUrl: 'https://maria-tyan.github.io/portal-distillery-front/img/Vacation.58135ecc.png',
           styles: {
             width: 500,
             height: 100,
@@ -102,7 +102,7 @@ export default {
         },
         {
           id: '4',
-          imgUrl: '/img/Most_popular_name.10912788.png',
+          imgUrl: 'https://maria-tyan.github.io/portal-distillery-front/img/Most_popular_name.10912788.png',
           styles: {
             width: 500,
             height: 100,
@@ -112,7 +112,7 @@ export default {
         },
         {
           id: '5',
-          imgUrl: '/img/Departments.deecc6bc.png',
+          imgUrl: 'https://maria-tyan.github.io/portal-distillery-front/img/Departments.deecc6bc.png',
           styles: {
             width: 500,
             height: 100,
@@ -122,7 +122,7 @@ export default {
         },
         {
           id: '6',
-          imgUrl: '/img/Offices.44f8b31a.png',
+          imgUrl: 'https://maria-tyan.github.io/portal-distillery-front/img/Offices.44f8b31a.png',
           styles: {
             width: 500,
             height: 100,
