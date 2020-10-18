@@ -10,8 +10,27 @@
         class="additional-data"
         :style="style"
       >
-        <div class="hover-block">
-          {{ slideData.content }}
+        <div
+          v-if="slideData.chart || slideData.contentImg || slideData.content"
+          class="hover-block"
+          :class="{'hover-block_chart': slideData.chart}"
+        >
+          <line-chart
+            v-if="slideData.chart"
+            :data="slideData.chart"
+          />
+          <div
+            v-else-if="slideData.contentImg"
+            class="hover-block_img"
+            :style="{
+              backgroundImage: `url(${slideData.contentImg.url})`,
+              width: `${this.slideData.contentImg.styles.width}px`,
+              height: `${this.slideData.contentImg.styles.height}px`,
+            }"
+          />
+          <div v-else-if="slideData.content">
+            {{ slideData.content.text }}
+          </div>
         </div>
       </div>
     </div>
@@ -19,25 +38,24 @@
 </template>
 
 <script>
+import LineChart from '../chars/lineChart';
+
 export default {
   name: 'SlideInterface',
   props: {
     slideData: Object,
   },
+  components: {
+    LineChart,
+  },
   computed: {
     style() {
-      console.log({
-        width: `${this.slideData.styles.width}px`,
-        height: `${this.slideData.styles.height}px`,
-        transform:
-          `translate(${this.slideData.styles.translateX}px, ${this.slideData.styles.translateY}px)`,
-      });
       return {
         cursor: 'pointer',
         width: `${this.slideData.styles.width}px`,
         height: `${this.slideData.styles.height}px`,
         transform:
-          `translate(${this.slideData.styles.translateX}px, ${this.slideData.styles.translateY}px)`,
+          `translate(${this.slideData.styles.translateX}%, ${this.slideData.styles.translateY}%)`,
       };
     },
   },

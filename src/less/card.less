@@ -13,6 +13,11 @@
   background-image: url(../assets/Vacation.png);
   background-image: url(../assets/Weather.png);
   background-image: url(../assets/Most_talkative.png);
+  background-image: url(../assets/Departments.png);
+  background-image: url(../assets/Offices.png);
+  background-image: url(../assets/Most_popular_name.png);
+  background-image: url(../assets/here_meme_2.jpeg);
+  background-image: url(../assets/351-3519746_toasty-toasty-mortal-kombat-meme.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -53,13 +58,24 @@
 .hover-block {
   opacity: 0;
   transition: all .5s;
-  width: 200px;
-  height: 100px;
+  width: auto;
+  height: auto;
   display: block;
   color: @COLOR-HINTS;
-  padding: 50px 20px;
+  padding: 10px 10px;
   background-color: white;
   box-shadow: 0 20px 35px 0 rgba(black, 0.2);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &_chart {
+    transform: translateY(-30%);
+  }
+
+  &_img {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .additional-data {

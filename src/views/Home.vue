@@ -35,46 +35,99 @@ export default {
       data: [
         {
           id: '0',
-          content: 'Slide1',
-          imgUrl: 'http://localhost:8080/img/Most_popular_name.248a3289.png',
+          contentImg: {
+            url: '/img/here_meme_2.97cb3440.jpeg',
+            styles: {
+              width: 600,
+              height: 600,
+            },
+          },
+          imgUrl: '/img/Here_channel.44e73815.png',
           styles: {
-            width: 100,
-            height: 200,
-            translateX: 100,
-            translateY: 100,
+            width: 600,
+            height: 600,
+            translateX: 34,
+            translateY: 10,
           },
         },
         {
           id: '1',
-          content: 'Slide2',
-          imgUrl: 'http://localhost:8080/img/Most_talkative.cb7a55d1.png',
+          content: {
+            text: '+25 новых сообщений',
+          },
+          imgUrl: '/img/Most_talkative.abab0eb5.png',
           styles: {
             width: 250,
-            height: 100,
-            translateX: 100,
-            translateY: 100,
+            height: 85,
+            translateX: -75,
+            translateY: 315,
           },
         },
         {
           id: '2',
-          content: 'Slide3',
-          imgUrl: 'http://localhost:8080/img/Weather.2fb05b2e.png',
+          contentImg: {
+            url: '/img/351-3519746_toasty-toasty-mortal-kombat-meme.9a78b3a4.png',
+            styles: {
+              width: 600,
+              height: 600,
+            },
+          },
+          imgUrl: '/img/Weather.6c9c9c76.png',
           styles: {
-            width: 200,
-            height: 200,
-            translateX: 100,
-            translateY: 100,
+            width: 600,
+            height: 600,
+            translateX: 70,
+            translateY: 10,
           },
         },
         {
           id: '3',
-          content: 'Slide4',
-          imgUrl: 'http://localhost:8080/img/Vacation.6a808b57.png',
+          imgUrl: '/img/Vacation.58135ecc.png',
           styles: {
-            width: 200,
-            height: 200,
-            translateX: 100,
-            translateY: 100,
+            width: 500,
+            height: 100,
+            translateX: -4,
+            translateY: 280,
+          },
+          chart: {
+            datasets: [
+              {
+                label: 'Vacation',
+                backgroundColor: '#58555C',
+                data: [13, 19, 12, 36],
+              },
+            ],
+            labels: ['28sep-2okt', '28sep-2oct', '5oct-9oct', '12oct-16oct'],
+          },
+        },
+        {
+          id: '4',
+          imgUrl: '/img/Most_popular_name.10912788.png',
+          styles: {
+            width: 500,
+            height: 100,
+            translateX: -4,
+            translateY: 280,
+          },
+        },
+        {
+          id: '5',
+          imgUrl: '/img/Departments.deecc6bc.png',
+          styles: {
+            width: 500,
+            height: 100,
+            translateX: -4,
+            translateY: 280,
+          },
+        },
+        {
+          id: '6',
+          imgUrl: '/img/Offices.44f8b31a.png',
+          styles: {
+            width: 500,
+            height: 100,
+            translateX: -4,
+            translateY: 280,
           },
         },
       ],
